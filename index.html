@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Security - Resilienza</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f9f9f9; }
+    header { background: #222; color: white; padding: 1em 2em; text-align: center; }
+    nav { margin: 1em; text-align: center; }
+    nav button { margin: 0 5px; padding: 0.5em 1em; }
+    main { padding: 1em 2em; max-width: 960px; margin: auto; background: white; }
+    img { max-width: 100%; height: auto; }
+    h2 { border-bottom: 2px solid #eee; padding-bottom: 0.3em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="titolo">Cyber Security - Resilienza</h1>
+  </header>
+  <nav>
+    <button onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button onclick="setLang('en')">🇬🇧 English</button>
+    <button onclick="setLang('th')">🇹🇭 ไทย</button>
+  </nav>
+  <main>
+    <section id="it">
+      <h2>Introduzione</h2>
+      <p>Questo progetto si propone di analizzare il concetto di resilienza nel contesto della sicurezza informatica, con particolare riferimento alle infrastrutture critiche.</p>
+      <h2>Resilienza e Infrastrutture Critiche</h2>
+      <p>La resilienza è la capacità di un sistema di adattarsi e reagire positivamente ad eventi imprevisti. Nelle infrastrutture critiche è fondamentale implementare misure preventive e reattive.</p>
+      <img src="img/resilienza-schema.png" alt="Schema della resilienza" />
+    </section>
+
+    <section id="en" style="display:none">
+      <h2>Introduction</h2>
+      <p>This project aims to analyze the concept of resilience in the context of cybersecurity, with a particular focus on critical infrastructures.</p>
+      <h2>Resilience and Critical Infrastructures</h2>
+      <p>Resilience is the ability of a system to adapt and respond effectively to unexpected events. In critical infrastructures, implementing preventive and reactive measures is essential.</p>
+      <img src="img/resilienza-schema.png" alt="Resilience diagram" />
+    </section>
+
+    <section id="th" style="display:none">
+      <h2>แนะนำ</h2>
+      <p>โครงการนี้มีจุดประสงค์เพื่อวิเคราะห์แนวคิดของความยืดหยุ่นในบริบทของความมั่นคงปลอดภัยทางไซเบอร์ โดยเฉพาะโครงสร้างพื้นฐานที่สำคัญ</p>
+      <h2>การฟื้นฟูเกี่ยวกับโครงสร้างที่สำคัญ</h2>
+      <p>ความยืดหยุ่นของระบบคือความสามารถในการปรับตัวและตอบสนองต่อเหตุการณ์ที่ไม่คาดคิดอย่างมีประสิทธิภาพ ในโครงสร้างพื้นฐานสำคัญจำเป็นต้องมีมาตรการป้องกันและตอบสนองที่เหมาะสม</p>
+      <img src="img/resilienza-schema.png" alt="แผนผังความยืดหยุ่น" />
+    </section>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('it').style.display = (lang === 'it') ? 'block' : 'none';
+      document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('th').style.display = (lang === 'th') ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
